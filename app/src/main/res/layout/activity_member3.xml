@@ -27,7 +27,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <androidx.cardview.widget.CardView
-            android:id="@+id/ki"
+            android:id="@+id/ra"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -40,12 +40,12 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/kimba" />
+                    android:src="@drawable/rachel" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kimbagira Sylvie"/>
+                    android:text="Uwimana Rachel"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -57,12 +57,12 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="browse1"
+                    android:onClick="brows1"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/od"
+            android:id="@+id/clo"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -75,12 +75,12 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/odette" />
+                    android:src="@drawable/cloudine" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ahishakiye Odette"/>
+                    android:text="Umuhire Claudine"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -92,7 +92,7 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="browse2"
+                    android:onClick="brows2"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -103,7 +103,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <androidx.cardview.widget.CardView
-            android:id="@+id/nic"
+            android:id="@+id/em"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -115,11 +115,11 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/nicole"/>
+                    android:src="@drawable/emma"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nininahazwe Nice Nicole" />
+                    android:text="Nyirate Emma" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -131,12 +131,12 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="browse3"
+                    android:onClick="brows3"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/bla"
+            android:id="@+id/gra"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -148,11 +148,11 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/Blanca"/>
+                    android:src="@drawable/grace"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Uwase Blandine"/>
+                    android:text="Umutesi Grace"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -165,7 +165,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
 
-                    android:onClick="browse4"
+                    android:onClick="brows4"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
