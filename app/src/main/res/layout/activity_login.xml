@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+<!--    <ImageView-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/code"/>-->
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -19,61 +26,68 @@
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:fontFamily="@font/arizonia"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
-            android:layout_marginBottom="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
             android:hint="Password"
+            android:fontFamily="@font/arizonia"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:background="@drawable/shape"
             android:inputType="textPassword"
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/passwordLoginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/akronim"
             android:padding="10dp"
             android:text="Log in"
-            android:background="@color/aliceblue"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/registerTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:textColor="@color/colorPrimary"
-            android:textStyle="bold"
-            android:textSize="15sp"
+            android:fontFamily="cursive"
             android:text="Don't have an account? Sign up here!"
-            android:id="@+id/registerTextView"
-            android:layout_gravity="center_horizontal" />
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="@color/colorPrimary"
-        android:textSize="30dp"
-        android:textStyle="bold"
         android:layout_above="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/akronim"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
