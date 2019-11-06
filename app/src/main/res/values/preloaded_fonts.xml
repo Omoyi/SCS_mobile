@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
         <item>@font/advent_pro_thin</item>
         <item>@font/aguafina_script</item>
         <item>@font/alegreya_sans_sc_thin</item>
         <item>@font/alex_brush</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/codystar_light</item>
+        <item>@font/eater</item>
+        <item>@font/yatra_one</item>
     </array>
 </resources>
