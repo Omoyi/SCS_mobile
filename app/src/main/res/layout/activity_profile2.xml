@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".ProfileActivity">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="315dp">
+        android:layout_height="317dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="190dp"
-            android:background="@drawable/pic1"
+            android:background="@drawable/pic4"
             android:orientation="vertical">
 
             <ImageView
@@ -22,15 +22,15 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/emma" />
+                android:src="@drawable/claudia" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="Emma Nyirate"
-                android:textColor="#0C4D6B"
+                android:text="umuhire claudine"
+                android:textColor="#EBEBB4"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:fontFamily="@font/codystar_light" />
@@ -141,44 +141,45 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:onClick="browser1"
-                tools:ignore="OnClick"
-                android:src="@drawable/ic_email_black_24dp" />
+                android:src="@drawable/ic_email_black_24dp"
+                tools:ignore="OnClick" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:paddingLeft="20dp"
-                android:text="rwakaemma34@gmail.com"
-                android:textStyle="bold"
                 android:onClick="browser1"
-                tools:ignore="OnClick"
-                app:fontFamily="@font/advent_pro_thin" />
+                android:paddingLeft="20dp"
+                android:text="claudinos1990@gmail.com"
+                android:textStyle="bold"
+                app:fontFamily="@font/advent_pro_thin"
+                tools:ignore="OnClick" />
         </LinearLayout>
 
         <LinearLayout
 
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:onClick="browser2"
-                tools:ignore="OnClick"
-                android:src="@drawable/ic_local_phone_black_24dp" />
+                android:src="@drawable/ic_local_phone_black_24dp"
+                tools:ignore="OnClick" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:paddingLeft="20dp"
-                android:text="+250 785454250"
-                android:textStyle="bold"
                 android:onClick="browser2"
-                tools:ignore="OnClick"
-                app:fontFamily="@font/advent_pro_thin" />
+                android:paddingLeft="20dp"
+                android:text="+250 785276111"
+                android:textStyle="bold"
+                app:fontFamily="@font/advent_pro_thin"
+                tools:ignore="OnClick" />
         </LinearLayout>
 
         <LinearLayout
@@ -192,7 +193,7 @@
                 android:layout_height="36dp"
                 android:onClick="browser3"
                 tools:ignore="OnClick"
-                android:src="@drawable/ic_group_add_black_24dp" />
+                android:src="@drawable/ic_group_black_24dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -200,9 +201,9 @@
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:text="Smart Code Pro"
+                android:textStyle="bold"
                 android:onClick="browser3"
                 tools:ignore="OnClick"
-                android:textStyle="bold"
                 app:fontFamily="@font/advent_pro_thin" />
         </LinearLayout>
 
@@ -214,7 +215,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="27dp"
         android:layout_marginBottom="29dp"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:text="View Github profile"
         android:textColor="#276D9C"
         android:onClick="browser4"

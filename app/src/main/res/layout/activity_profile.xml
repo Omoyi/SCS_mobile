@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="405dp">
+        android:layout_height="313dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:background="@drawable/pic1"
+            android:layout_height="190dp"
+            android:background="@drawable/pic3"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/rachel" />
 
             <TextView
@@ -30,28 +30,31 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="Uwimana Rachel"
-                android:textColor="#7099B4"
+                android:textColor="#FDF8F8"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                app:fontFamily="@font/eater" />
+                app:fontFamily="@font/codystar_light" />
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:layout_width="320dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="290dp">
+            android:layout_marginTop="180dp"
+            app:cardCornerRadius="39dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:weightSum="3">
+
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="match_parent" >
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -68,12 +71,13 @@
                         android:textSize="20sp"
                         app:fontFamily="@font/advent_pro_thin" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="match_parent" >
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -90,17 +94,18 @@
                         android:textSize="20sp"
                         app:fontFamily="@font/advent_pro_thin" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="match_parent" >
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_insert_emoticon_black_24dp"
+                        android:background="@drawable/ic_portrait_black_24dp"
                         android:textSize="20sp" />
 
                     <TextView
@@ -108,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
                         android:text="1"
-                        android:textColor="#8F5341"
+                        android:textColor="#6B392A"
                         android:textSize="20sp"
                         app:fontFamily="@font/advent_pro_thin" />
 
@@ -122,17 +127,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
+
         android:layout_gravity="center"
         >
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
+                android:onClick="browser1"
+                tools:ignore="OnClick"
                 android:src="@drawable/ic_email_black_24dp" />
 
             <TextView
@@ -142,17 +151,21 @@
                 android:paddingLeft="20dp"
                 android:text="urakhel7@gmail.com"
                 android:textStyle="bold"
-                app:fontFamily="@font/advent_pro_thin" />
+                app:fontFamily="@font/advent_pro_thin"
+                android:onClick="browser1"
+                tools:ignore="OnClick" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="25dp"
+
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
+                android:onClick="browser2"
+                tools:ignore="OnClick"
                 android:layout_height="36dp"
                 android:src="@drawable/ic_local_phone_black_24dp" />
 
@@ -160,20 +173,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:onClick="browser2"
+                tools:ignore="OnClick"
                 android:paddingLeft="20dp"
-                android:text="+250 788303640"
+                android:text="+250 787971925"
                 android:textStyle="bold"
                 app:fontFamily="@font/advent_pro_thin" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="25dp"
+
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
+                android:onClick="browser3"
+                tools:ignore="OnClick"
                 android:layout_height="36dp"
                 android:src="@drawable/ic_group_add_black_24dp" />
 
@@ -181,41 +198,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:onClick="browser3"
+                tools:ignore="OnClick"
                 android:paddingLeft="20dp"
                 android:text="Smart Code Pro"
                 android:textStyle="bold"
                 app:fontFamily="@font/advent_pro_thin" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/ic_my_location_black_24dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="20dp"
-                android:text="KK 56 st"
-                android:textStyle="bold"
-                app:fontFamily="@font/advent_pro_thin" />
-        </LinearLayout>
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
-        android:text="View Group"
-        android:textColor="#276D9C"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/button1"
+        android:text="View Github profile"
+        android:textColor="#FCFBFB"
+        android:onClick="browser4"
+        tools:ignore="OnClick"
         app:fontFamily="@font/yatra_one" />
 </LinearLayout>
