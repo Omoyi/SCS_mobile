@@ -10,13 +10,14 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="272dp"
         android:elevation="6dp"
+        android:id="@+id/leaf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/leaf"
         android:layout_marginRight="272dp" />
 
     <LinearLayout
-        android:id="@+id/anim"
+        android:id="@+id/animText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -32,19 +33,93 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Good Morning"
-            android:textColor="#FFF"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:text="SMART CODE PRO"
+            android:textColor="#83E0F0"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="We do what we love!"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:fontFamily="@font/yatra_one" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/explore"
+        android:layout_marginTop="240dp"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get to know us"
+            android:textColor="#fff"
+            android:layout_marginBottom="12dp"
             android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mr Panda Risky"
-            android:textColor="#FFF"
-            android:textSize="16sp" />
+            android:text="Simply makes design good"
+            android:layout_marginBottom="12dp"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
     </LinearLayout>
 
+<!--    <LinearLayout-->
+<!--        android:id="@+id/menus"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="240dp"-->
+<!--        android:elevation="6dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.726"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="70dp"-->
+<!--            android:orientation="horizontal">-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="526dp"
+        android:layout_height="900dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/homepage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
