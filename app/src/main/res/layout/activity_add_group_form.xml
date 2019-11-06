@@ -32,6 +32,7 @@
         android:layout_width="218dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/members"
+        android:inputType="textPassword"
         android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:hint="Password" />
@@ -40,6 +41,7 @@
         android:id="@+id/confirmPassword"
         android:layout_width="218dp"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/ic_lock_open_black_24dp"
@@ -51,7 +53,15 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
+        android:background="@drawable/button"
         android:text="Add group"/>
+
+<!--    <view-->
+<!--        android:layout_width="343dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="470dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@color/colorPrimary" />-->
 
     <TextView
         android:id="@+id/register"
@@ -60,6 +70,4 @@
         android:text="Register members"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="490dp"/>
-
-
 </RelativeLayout>

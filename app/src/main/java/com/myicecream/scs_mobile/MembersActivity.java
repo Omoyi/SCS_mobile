@@ -20,7 +20,7 @@ public class MembersActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group);
+        setContentView(R.layout.activity_members);
         mFirstGroup =(CardView)findViewById(R.id.firstGroup);
         mSecondGroup =(CardView)findViewById(R.id.secondGroup);
         mThirdGroup =(CardView)findViewById(R.id.thirdGroup);

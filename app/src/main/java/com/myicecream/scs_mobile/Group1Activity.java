@@ -9,6 +9,6 @@ public class Group1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_member_g1);
+        setContentView(R.layout.group1);
     }
 }
