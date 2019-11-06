@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Member1">
+    tools:context=".Member2">
     <RelativeLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <androidx.cardview.widget.CardView
-            android:id="@+id/one"
+            android:id="@+id/ki"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -45,7 +45,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sangwa Sabine Chelsea"/>
+                    android:text="Kimbagira Sylvie"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -62,7 +62,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/two"
+            android:id="@+id/od"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -80,7 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Irankunda Kamana Eliane"/>
+                    android:text="Ahishakiye Odette"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -103,7 +103,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <androidx.cardview.widget.CardView
-            android:id="@+id/three"
+            android:id="@+id/nic"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -119,7 +119,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Umurerwa Lynda Flower" />
+                    android:text="Nininahazwe Nice Nicole" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -136,7 +136,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/four"
+            android:id="@+id/bla"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -152,7 +152,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ingabire Ange"/>
+                    android:text="Uwase Blandine"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"

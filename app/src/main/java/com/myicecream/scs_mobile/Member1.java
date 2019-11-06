@@ -28,12 +28,12 @@ public class Member1 extends AppCompatActivity {
         startActivity(browser1Intent);
     }
 
-    public void browser2(View view){
+    public void browser3(View view){
         Intent browser2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/lyndaflower"));
         startActivity(browser2Intent);
     }
 
-    public void browser3(View view){
+    public void browser2(View view){
         Intent browser3Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Eliane-5"));
         startActivity(browser3Intent);
     }
