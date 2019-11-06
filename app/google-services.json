@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "614554549109",
+    "firebase_url": "https://scsmobile-122af.firebaseio.com",
+    "project_id": "scsmobile-122af",
+    "storage_bucket": "scsmobile-122af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614554549109:android:74493fc6132c9fe8b8f13c",
+        "android_client_info": {
+          "package_name": "com.myicecream.scs_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614554549109-rcedht4bio2vvo57v28aga9uk6kmtapc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myicecream.scs_mobile",
+            "certificate_hash": "7889e092f1d8bae7d1b12bece0eb938d01fb56ab"
+          }
+        },
+        {
+          "client_id": "614554549109-6tr97e4iuuhgngbrpdr1r16mpdbrqsmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myicecream.scs_mobile",
+            "certificate_hash": "fe8d31da82dc4ef276e3f882b6fb9c1d682e77f2"
+          }
+        },
+        {
+          "client_id": "614554549109-ht86kagrm5s1fui4vn90avigqvrtpcaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS-6tVpRbNkDUZ4mSsPqCqo8F9DQh9lHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614554549109-ht86kagrm5s1fui4vn90avigqvrtpcaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

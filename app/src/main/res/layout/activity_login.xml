@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#99FFCC"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -75,5 +74,6 @@
         android:textStyle="bold"
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
