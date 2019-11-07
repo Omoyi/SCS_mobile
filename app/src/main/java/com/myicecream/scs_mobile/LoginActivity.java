@@ -4,20 +4,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,18 +31,16 @@ import butterknife.ButterKnife;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     public static final String TAG = LoginActivity.class.getSimpleName();
-    @BindView(R.id.passwordLoginButton)
-    Button mPasswordLoginButton;
-    @BindView(R.id.emailEditText)
-    EditText mEmailEditText;
+    @BindView(R.id.passwordLoginButton) Button mPasswordLoginButton;
+    @BindView(R.id.emailEditText) EditText mEmailEditText;
     @BindView(R.id.passwordEditText) EditText mPasswordEditText;
-    @BindView(R.id.registerTextView)
-    TextView mRegisterTextView;
+    @BindView(R.id.registerTextView)TextView mRegisterTextView;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-
     private ProgressDialog mAuthProgressDialog;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +49,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mRegisterTextView.setOnClickListener(this);
         mPasswordLoginButton.setOnClickListener(this);
 
-        mAuth = FirebaseAuth.getInstance();
+
         mAuthListener = new FirebaseAuth.AuthStateListener(){
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
@@ -59,6 +63,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
         };
         createAuthProgressDialog();
+    }
+    private String getExtension(Uri uri){
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
     }
 
 
@@ -74,7 +83,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if(view == mRegisterTextView){
             Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
             startActivity(intent);
-            finish();
+//            finish();
         }
         if (view == mPasswordLoginButton){
             loginWithPassword();
@@ -109,15 +118,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        mAuth.removeAuthStateListener(mAuthListener);
-    }
+//    @Override
+//    public void onStart(){
+//        super.onStart();
+//        mAuth.addAuthStateListener(mAuthListener);
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        mAuth.removeAuthStateListener(mAuthListener);
+//    }
 }

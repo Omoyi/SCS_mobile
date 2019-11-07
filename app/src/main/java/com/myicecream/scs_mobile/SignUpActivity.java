@@ -4,22 +4,33 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,12 +47,20 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         @BindView(R.id.emailEditText) EditText mEmailEditText;
         @BindView(R.id.passwordEditText) EditText mPasswordEditText;
         @BindView(R.id.confirmPasswordEditText) EditText mConfirmPasswordEditText;
-        @BindView(R.id.loginTextView)
-        TextView mLoginTextView;
+        @BindView(R.id.loginTextView) TextView mLoginTextView;
+        @BindView(R.id.profile) ImageView profile;
+         @BindView(R.id.choose) Button choose;
+        @BindView(R.id.upload) Button upload;
+
         private FirebaseAuth mAuth;
         private FirebaseAuth.AuthStateListener mAuthListener;
         private ProgressDialog mAuthProgressDialog;
         private String mName;
+
+        Uri imgUri;
+        StorageReference storageReference;
+        DatabaseReference databaseReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,11 +68,70 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             ButterKnife.bind(this);
             mLoginTextView.setOnClickListener(this);
             mCreateUserButton.setOnClickListener(this);
+
+        choose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageChooser();
+            }
+        });
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageUploader();
+            }
+        });
+
+        mAuth = FirebaseAuth.getInstance();
+
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("user");
+        storageReference = FirebaseStorage.getInstance().getReference("Images");
+        user user = new user();
             mAuth = FirebaseAuth.getInstance();
             createAuthStateListener();
             createAuthProgressDialog();
         }
-        public void createAuthProgressDialog(){
+
+    private void ImageChooser() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent,1);
+    }
+    private String getExtension(Uri uri){
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
+    }
+    private void ImageUploader() {
+        StorageReference reference = storageReference.child(System.currentTimeMillis()+"."+getExtension(imgUri));
+        reference.putFile(imgUri)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        // Get a URL to the uploaded content
+                        // Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                        Toast.makeText(SignUpActivity.this,"Profile set successfully", Toast.LENGTH_LONG).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        // Handle unsuccessful uploads
+                        // ...
+                    }
+                });
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==1 && resultCode==RESULT_OK && data != null && data.getData() != null){
+            imgUri = data.getData();
+            profile.setImageURI(imgUri);
+        }
+    }
+
+    public void createAuthProgressDialog(){
             mAuthProgressDialog = new ProgressDialog(this);
             mAuthProgressDialog.setTitle("Loading...");
             mAuthProgressDialog.setMessage("Authenticating with Firebase...");

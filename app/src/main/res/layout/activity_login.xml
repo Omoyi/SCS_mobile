@@ -4,14 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".LoginActivity">
 
-<!--    <ImageView-->
-<!--        android:layout_width="80dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:adjustViewBounds="true"-->
-<!--        android:scaleType="fitCenter"-->
-<!--        android:src="@drawable/code"/>-->
 
     <LinearLayout
         android:orientation="vertical"
