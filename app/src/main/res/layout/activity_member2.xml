@@ -7,19 +7,22 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".Member2">
+
     <RelativeLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:background="@color/first"
+        android:layout_height="80dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Members"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="MEMBERS"
+            android:textColor="@android:color/white"
             android:textSize="40sp"
-            app:fontFamily="@font/fugaz_one"
-            android:textColor="@android:color/black"/>
+            app:fontFamily="@font/purple_purse" />
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +33,7 @@
             android:id="@+id/ki"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,7 +49,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kimbagira Sylvie"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -56,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browse1"
                     android:background="@drawable/coloring"
@@ -67,7 +71,7 @@
             android:id="@+id/od"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -83,7 +87,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ahishakiye Odette"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -93,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browse2"
                     android:background="@drawable/coloring"
@@ -110,7 +115,7 @@
             android:id="@+id/nic"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -120,11 +125,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/nic"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nininahazwe Nice Nicole"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -134,7 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browse3"
                     android:background="@drawable/coloring"
@@ -145,7 +152,7 @@
             android:id="@+id/bla"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -155,11 +162,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/bla"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Uwase Blandine"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -169,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browse4"
                     android:background="@drawable/coloring"

@@ -10,20 +10,18 @@
     <RelativeLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:background="@color/first"
+        android:layout_height="80dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:width="500dp"
-            android:height="145dp"
-            android:background="@color/first"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
             android:text="MEMBERS"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="40sp"
-            android:paddingLeft="40dp"
-            app:fontFamily="@font/irish_grover" />
+            app:fontFamily="@font/purple_purse" />
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +32,7 @@
             android:id="@+id/one"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -64,7 +62,7 @@
                     android:background="@drawable/coloring"
                     android:gravity="center"
                     android:onClick="browser1"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     tools:ignore="OnClick" />
             </LinearLayout>
@@ -73,7 +71,7 @@
             android:id="@+id/two"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -100,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browser2"
                     android:background="@drawable/coloring"
@@ -117,7 +115,7 @@
             android:id="@+id/three"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -143,7 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browser3"
                     android:background="@drawable/coloring"
@@ -154,7 +152,7 @@
             android:id="@+id/four"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="30dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -180,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:background="@drawable/coloring"
                     android:onClick="browser"

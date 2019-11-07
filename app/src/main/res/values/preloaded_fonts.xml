@@ -4,11 +4,17 @@
         <item>@font/</item>
         <item>@font/abril_fatface</item>
         <item>@font/akronim</item>
+        <item>@font/anton</item>
         <item>@font/arbutus</item>
         <item>@font/arizonia</item>
         <item>@font/berkshire_swash</item>
+        <item>@font/cherry_cream_soda</item>
         <item>@font/dancing_script_bold</item>
         <item>@font/fugaz_one</item>
+        <item>@font/griffy</item>
+        <item>@font/headland_one</item>
         <item>@font/irish_grover</item>
+        <item>@font/jacques_francois_shadow</item>
+        <item>@font/purple_purse</item>
     </array>
 </resources>

@@ -10,16 +10,18 @@
     <RelativeLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:background="@color/first"
+        android:layout_height="80dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Members"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="MEMBERS"
+            android:textColor="@android:color/white"
             android:textSize="40sp"
-            app:fontFamily="@font/fugaz_one"
-            android:textColor="@android:color/black"/>
+            app:fontFamily="@font/purple_purse" />
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +48,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mugengano Alice"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -56,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browsi1"
                     android:background="@drawable/coloring"
@@ -83,7 +86,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ruzindana Wendy Ornella"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -93,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browsi2"
                     android:background="@drawable/coloring"
@@ -120,11 +124,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/hono"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Niyonkuru Honorine"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -134,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:onClick="browsi3"
                     android:background="@drawable/coloring"
@@ -155,11 +161,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/est"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rangira Esther Carrelle"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -169,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="view more"
+                    android:text="Project"
                     android:textColor="@android:color/white"
                     android:background="@drawable/coloring"
                     android:onClick="browsi4"
