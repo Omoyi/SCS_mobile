@@ -31,35 +31,36 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
     private EditText mConfirmPassword;
     private Button mButtonAdd;
     private TextView mRegisterGroup;
-   DatabaseReference team;
+    DatabaseReference team;
     List<AddGroupAdapter> teamMembers;
     private RecyclerView mRecyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_group_form);
-        mGroupName= (EditText)findViewById(R.id.groupName);
-        mMembers = (EditText)findViewById(R.id.members);
-        mPasswordR= (EditText)findViewById(R.id.password);
-        mConfirmPassword= (EditText)findViewById(R.id.confirmPassword);
-        mButtonAdd=(Button) findViewById(R.id.add);
-        mRegisterGroup=(TextView) findViewById(R.id.register);
-        mRecyclerView =(RecyclerView) findViewById(R.id.recyclerView);
+        mGroupName = (EditText) findViewById(R.id.groupName);
+        mMembers = (EditText) findViewById(R.id.members);
+        mPasswordR = (EditText) findViewById(R.id.password);
+        mConfirmPassword = (EditText) findViewById(R.id.confirmPassword);
+        mButtonAdd = (Button) findViewById(R.id.add);
+        mRegisterGroup = (TextView) findViewById(R.id.register);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         team = FirebaseDatabase.getInstance().getReference();
         mButtonAdd.setOnClickListener(this);
-       mRegisterGroup.setOnClickListener(this);
-       teamMembers = new ArrayList<>();
+        mRegisterGroup.setOnClickListener(this);
+        teamMembers = new ArrayList<>();
 
     }
 
     @Override
     public void onClick(View v) {
         if (v == mRegisterGroup) {
-            Intent add = new Intent(AddGroupFormActivity.this,RegisterMembersActivity.class);
+            Intent add = new Intent(AddGroupFormActivity.this, RegisterMembersActivity.class);
             startActivity(add);
         }
-        if ( v == mButtonAdd) {
+        if (v == mButtonAdd) {
             Intent intent = new Intent(AddGroupFormActivity.this, MembersActivity.class);
             startActivity(intent);
         }
@@ -67,24 +68,26 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
 
     protected void onStart() {
         super.onStart();
-           team.addValueEventListener(new ValueEventListener() {
-        @Override
-        public void onDataChange( DataSnapshot dataSnapshot) {
-            for(DataSnapshot snap: dataSnapshot.getChildren()){
-                 AddGroupAdapter wish = snap.getValue(AddGroupAdapter.class);
-                teamMembers.add(wish);
+        team.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snap : dataSnapshot.getChildren()) {
+                    AddGroupAdapter wish = snap.getValue(AddGroupAdapter.class);
+                    teamMembers.add(wish);
+                }
+//            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
+//            mRecyclerView.setAdapter(adapter);
+//
+//
+//            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
+
             }
-            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
-            mRecyclerView.setAdapter(adapter);
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
+            }
 
-        }
-
-               @Override
-               public void onCancelled(@NonNull DatabaseError databaseError) {
-
-               }
-
-           }
+        });
+    }
+}

@@ -9,11 +9,10 @@
     tools:context=".MembersActivity">
 
     <RelativeLayout
-        android:layout_weight="4"
+        android:layout_weight="5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/style"
-    >
+        android:background="#19334d"
+        android:layout_height="0dp">
 
 
         <TextView
@@ -31,7 +30,8 @@
             android:layout_width="62dp"
             android:layout_height="62dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/ic_group_add_black_24dp"
+            android:src="@drawable/makefg"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="20sp"/>
     </RelativeLayout>
 
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+
         android:gravity="center">
         <androidx.cardview.widget.CardView
             android:id="@+id/firstGroup"
@@ -95,9 +95,9 @@
                     android:text="Group 2"/>
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="2dp"
                     android:layout_margin="10dp"
-                    android:background="#595959"/>
+                    android:background="#595959" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,16 +125,17 @@
                 android:gravity="center">
                 <ImageView
                     android:layout_width="64dp"
-                    android:layout_height="64dp" />
+                    android:layout_height="64dp"
+                    android:src="@drawable/logo"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Group 3" />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="2dp"
                     android:layout_margin="10dp"
-                    android:background="#595959"/>
+                    android:background="#595959" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -155,16 +156,19 @@
                 android:gravity="center">
                 <ImageView
                     android:layout_width="64dp"
-                    android:layout_height="64dp" />
+                    android:layout_height="64dp"
+                    android:src="@drawable/white"
+                    android:background="#000000"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Group 4"/>
+                    android:text="Group 4"
+                   />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="2dp"
                     android:layout_margin="10dp"
-                    android:background="#595959"/>
+                    android:background="#595959" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
