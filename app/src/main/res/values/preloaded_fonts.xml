@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic_slab</item>
         <item>@font/anton</item>
+        <item>@font/cormorant_italic</item>
+        <item>@font/farsan</item>
+        <item>@font/henny_penny</item>
     </array>
 </resources>

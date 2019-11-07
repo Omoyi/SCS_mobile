@@ -26,10 +26,12 @@ public class addGroup extends ArrayAdapter<AddGroupAdapter> {
 
         EditText  editTextName=(EditText) group.findViewById(R.id.groupName);
         EditText  editTextMember=(EditText) group.findViewById(R.id.members);
+        EditText editTextDescription=(EditText) group.findViewById(R.id.description);
         AddGroupAdapter add= members.get(position);
 
         editTextName.setText(add.getGroupName());
         editTextMember.setText(add.getGroupMembers());
+        editTextDescription.setText(add.getDescription());
         return group;
     }
 }

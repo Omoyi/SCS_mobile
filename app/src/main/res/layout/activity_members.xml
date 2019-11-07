@@ -18,8 +18,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="19dp"
+            android:layout_marginTop="15dp"
             android:text="Smart Code pro"
             android:textColor="#ffff"
             android:textSize="34sp"
@@ -27,12 +27,12 @@
 
         <ImageView
             android:id="@+id/addGroup"
-            android:layout_width="62dp"
-            android:layout_height="62dp"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/makefg"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20sp"/>
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="37dp"
+            android:src="@drawable/makefg" />
     </RelativeLayout>
 
     <LinearLayout
@@ -118,29 +118,34 @@
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/logo"/>
+                    android:src="@drawable/logo" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Group 3" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_margin="10dp"
                     android:background="#595959" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="ghshvgyufwyh"/>
+                    android:text="ghshvgyufwyh" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

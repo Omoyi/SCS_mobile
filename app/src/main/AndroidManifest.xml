@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RegisterMembersActivity"></activity>
-        <activity android:name=".AddGroupFormActivity" />
+        <activity android:name=".AddGroupFormActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            />
         <activity android:name=".Group4Activity" />
         <activity android:name=".Group3" />
         <activity android:name=".Group2" />
         <activity android:name=".Group1Activity" />
-        <activity android:name=".MembersActivity">
+        <activity android:name=".MembersActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

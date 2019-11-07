@@ -6,11 +6,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,29 +31,32 @@ import java.util.List;
 public class AddGroupFormActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText mGroupName;
     private EditText mMembers;
-    private EditText mPasswordR;
-    private EditText mConfirmPassword;
+    private EditText mDescription;
     private Button mButtonAdd;
     private TextView mRegisterGroup;
+    private ImageButton mUp;
+
     DatabaseReference team;
     List<AddGroupAdapter> teamMembers;
-    private RecyclerView mRecyclerView;
+    private GridView mGrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_group_form);
+
         mGroupName = (EditText) findViewById(R.id.groupName);
         mMembers = (EditText) findViewById(R.id.members);
-        mPasswordR = (EditText) findViewById(R.id.password);
-        mConfirmPassword = (EditText) findViewById(R.id.confirmPassword);
+        mDescription = (EditText) findViewById(R.id.description);
         mButtonAdd = (Button) findViewById(R.id.add);
         mRegisterGroup = (TextView) findViewById(R.id.register);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        mGrid = (GridView) findViewById(R.id.myGrid);
+        mUp=(ImageButton) findViewById(R.id.up) ;
 
         team = FirebaseDatabase.getInstance().getReference();
         mButtonAdd.setOnClickListener(this);
         mRegisterGroup.setOnClickListener(this);
+        mUp.setOnClickListener(this);
         teamMembers = new ArrayList<>();
 
     }
@@ -60,9 +67,16 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
             Intent add = new Intent(AddGroupFormActivity.this, RegisterMembersActivity.class);
             startActivity(add);
         }
-        if (v == mButtonAdd) {
-            Intent intent = new Intent(AddGroupFormActivity.this, MembersActivity.class);
-            startActivity(intent);
+//        if (v == mButtonAdd) {
+//            Intent intent = new Intent(AddGroupFormActivity.this, MembersActivity.class);
+//            startActivity(intent);
+//        }
+        if (v == mButtonAdd){
+            addMembers();
+        }
+        if (v == mUp) {
+            Intent intent7 = new Intent(AddGroupFormActivity.this, MembersActivity.class);
+            startActivity(intent7);
         }
     }
 
@@ -75,11 +89,8 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
                     AddGroupAdapter wish = snap.getValue(AddGroupAdapter.class);
                     teamMembers.add(wish);
                 }
-//            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
-//            mRecyclerView.setAdapter(adapter);
-//
-//
-//            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
+            addGroup adapter = new addGroup(AddGroupFormActivity.this, teamMembers);
+            mGrid.setAdapter(adapter);
 
             }
 
@@ -90,4 +101,22 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
 
         });
     }
+
+    private void addMembers() {
+        String name = mGroupName.getText().toString().trim();
+        String members = mMembers.getText().toString();
+        String description =mDescription.getText().toString();
+
+
+        if (!TextUtils.isEmpty(name)){
+            String id = team.push().getKey();
+
+            AddGroupAdapter wish = new
+                    AddGroupAdapter(id, name, members,description);
+            team.child(id).setValue(wish);
+            Toast.makeText(this, "Saved ", Toast.LENGTH_LONG).show();
+
+        }
+    }
+
 }

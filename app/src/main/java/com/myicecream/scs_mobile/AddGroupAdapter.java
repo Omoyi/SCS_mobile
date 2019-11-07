@@ -3,26 +3,30 @@ package com.myicecream.scs_mobile;
 public class AddGroupAdapter {
     private String groupName;
     private String groupMembers;
-    private String password;
-    private String confirmPassword;
+    private String description;
 
-    public  AddGroupAdapter(String groupName,String groupMembers,String password, String confirmPassword){
+    public  AddGroupAdapter(String id, String groupName, String groupMembers, String description){
         this.groupName= groupName;
         this.groupMembers=groupMembers;
-        this.password = password;
-        this.confirmPassword = confirmPassword;
+        this.description = description;
     }
 
     public String getGroupName(){
         return groupName;
     }
+    public void setGroupName(String groupName){
+        this.groupName = groupName;
+    }
     public String getGroupMembers(){
         return groupMembers;
     }
-    public String getPassword(){
-        return password;
+    public void setGroupMembers(String groupMembers){
+        this.groupMembers = groupMembers;
     }
-    public String getConfirmPassword(){
-        return confirmPassword;
+    public String getDescription(){
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description=description;
     }
 }
