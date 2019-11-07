@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
         <item>@font/abril_fatface</item>
         <item>@font/akronim</item>
         <item>@font/arbutus</item>
         <item>@font/arizonia</item>
         <item>@font/berkshire_swash</item>
+        <item>@font/dancing_script_bold</item>
         <item>@font/fugaz_one</item>
+        <item>@font/irish_grover</item>
     </array>
 </resources>

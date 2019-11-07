@@ -77,7 +77,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/odette" />
+                    android:src="@drawable/ode" />
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -16,10 +16,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Members"
+            android:width="500dp"
+            android:height="145dp"
+            android:background="@color/first"
+            android:text="MEMBERS"
+            android:textColor="@android:color/black"
             android:textSize="40sp"
-            app:fontFamily="@font/fugaz_one"
-            android:textColor="@android:color/black"/>
+            android:paddingLeft="40dp"
+            app:fontFamily="@font/irish_grover" />
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,20 +50,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sangwa Sabine Chelsea"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
                     android:background="#595959"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/coloring"
                     android:gravity="center"
+                    android:onClick="browser1"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="browser1"
-                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -83,7 +89,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Irankunda Kamana Eliane"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -120,11 +127,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/lyn"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Umurerwa Lynda Flower"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -155,11 +164,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/ang"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ingabire Ange"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    app:fontFamily="@font/dancing_script_bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"

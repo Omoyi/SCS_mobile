@@ -15,8 +15,8 @@
         android:largeHeap="true">
         <activity android:name=".Member3"></activity>
         <activity android:name=".Member2" />
-        <activity android:name=".Member1" />
-        <activity android:name=".Member4">
+        <activity android:name=".Member4" />
+        <activity android:name=".Member1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
