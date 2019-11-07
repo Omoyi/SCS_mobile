@@ -1,8 +1,8 @@
 package com.myicecream.scs_mobile;
 
-public class user {
+public class User {
     private String memberName;
-    public user() {
+    public User() {
     }
     public String getMemberName() {
         return memberName;

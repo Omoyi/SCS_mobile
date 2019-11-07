@@ -60,6 +60,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         Uri imgUri;
         StorageReference storageReference;
         DatabaseReference databaseReference;
+        User user = new User();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +69,18 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_sign_up);
             ButterKnife.bind(this);
             mLoginTextView.setOnClickListener(this);
-            mCreateUserButton.setOnClickListener(this);
+            mCreateUserButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String username= mNameEditText.getText().toString().trim();
+                    user.setMemberName(username);
+                    databaseReference.push().setValue(user);
+                    Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+                    intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK | intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+                }
+            });
 
         choose.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,9 +97,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         mAuth = FirebaseAuth.getInstance();
 
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("user");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("User");
         storageReference = FirebaseStorage.getInstance().getReference("Images");
-        user user = new user();
             mAuth = FirebaseAuth.getInstance();
             createAuthStateListener();
             createAuthProgressDialog();
