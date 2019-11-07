@@ -5,16 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity {
-//    static int SPLASH_TIME_OUT = 3000;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
     private ImageView image, leaf;
     private  LinearLayout animText, texth, menus;
     private  Animation frombottom;
+    @BindView(R.id.button) Button button;
 
 // private LinearLayout leaflet,linear;
 // private Button button;
@@ -24,21 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        button = (Button)findViewById(R.id.button);
-//        leaflet = (LinearLayout)findViewById(R.id.linear);
-//        linear = (LinearLayout)findViewById(R.id.linear);
-//        meetbtn = AnimationUtils.loadAnimation(this, R.anim.meetbtn);
-//        leaflet.setAnimation(meetbtn);
-
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        },SPLASH_TIME_OUT );
-
+        ButterKnife.bind(this);
+        button.setOnClickListener(this);
         frombottom = AnimationUtils.loadAnimation(this, R.anim.anim1);
 
 
@@ -54,5 +47,12 @@ public class MainActivity extends AppCompatActivity {
 
         texth.startAnimation(frombottom);
 //        menus.startAnimation(frombottom);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == button){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        }
     }
 }

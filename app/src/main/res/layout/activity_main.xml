@@ -59,8 +59,8 @@
 
     <LinearLayout
         android:id="@+id/explore"
-        android:layout_width="236dp"
-        android:layout_height="574dp"
+        android:layout_width="285dp"
+        android:layout_height="568dp"
         android:layout_gravity="center"
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
@@ -75,8 +75,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SMART CODE PRO"
             android:layout_marginTop="50dp"
+            android:text="SMART CODE PRO"
             android:textColor="#2E5C28"
             android:textSize="26sp"
             android:textStyle="bold"
@@ -95,10 +95,10 @@
             app:fontFamily="@font/yatra_one" />
 
         <ImageView
+            android:id="@+id/text"
             android:layout_width="152dp"
             android:layout_height="152dp"
             android:layout_marginTop="70dp"
-            android:id="@+id/text"
             android:background="@drawable/ic_incandescent_24dp" />
 
         <TextView
@@ -109,10 +109,13 @@
             android:layout_marginBottom="30dp"
             android:gravity="center"
             android:text="Smart Code Pro is a platform designed to help investors, clients and sponsors meet with known programmers especially wecode graduate!"
-            android:textColor="#0B2D35" />
+            android:textColor="#0B2D35"
+            android:textSize="15sp"
+            app:fontFamily="@font/abhaya_libre" />
 
 
         <Button
+            android:id="@+id/button"
             android:layout_width="156dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView2"

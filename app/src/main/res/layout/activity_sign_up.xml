@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp" />
+
+            <Button
+                android:id="@+id/choose"
+                android:layout_width="98dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="103dp"
+                android:layout_toRightOf="@+id/upload"
+                android:paddingLeft="3dp"
+                android:text="Choose profile" />
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="95dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/profile"
+                android:layout_marginStart="-162dp"
+                android:layout_marginTop="3dp"
+                android:text="Upload"
+                android:layout_marginLeft="-162dp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="348dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:fontFamily="@font/arizonia"
+            android:hint="Name"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="344dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:fontFamily="@font/arizonia"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="345dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:fontFamily="@font/arizonia"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="351dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:fontFamily="@font/arizonia"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/createUserButton"
+            android:layout_width="336dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/akronim"
+            android:padding="10dp"
+            android:text="Sign up"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="200dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="cursive"
+            android:text="Already have an account? Log in here!"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="212dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="100dp"
+        android:fontFamily="@font/akronim"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
