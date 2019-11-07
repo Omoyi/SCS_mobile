@@ -13,7 +13,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_profile1);
     }
 
     public void browser1(View view){
@@ -33,6 +33,20 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void browser4(View view){
         Intent browser4Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Omoyi"));
+        startActivity(browser4Intent);
+    }
+
+
+    public void browser2E(View view){
+        String PhoneNum = "+250 785454250";
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse("tel:"+Uri.encode(PhoneNum.trim())));
+        callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(callIntent);
+    }
+
+    public void browser4E(View view){
+        Intent browser4Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Nyirate"));
         startActivity(browser4Intent);
     }
 }
