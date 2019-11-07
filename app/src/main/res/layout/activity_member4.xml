@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Member2">
+    tools:context=".Member4">
     <RelativeLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
@@ -45,7 +45,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mugengano Alice"/>
+                    android:text="Mugengano Alice"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -57,7 +58,8 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="brow1"
+                    android:onClick="browsi1"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -80,7 +82,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ruzindana Wendy Ornella"/>
+                    android:text="Ruzindana Wendy Ornella"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -92,7 +95,8 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="brow2"
+                    android:onClick="browsi2"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -119,7 +123,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Niyonkuru Honorine" />
+                    android:text="Niyonkuru Honorine"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -131,12 +136,13 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-                    android:onClick="brow3"
+                    android:onClick="browsi3"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/gra"
+            android:id="@+id/es"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -152,7 +158,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rangira Esther Carrelle"/>
+                    android:text="Rangira Esther Carrelle"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -164,8 +171,8 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-
-                    android:onClick="brow4"
+                    android:background="@drawable/coloring"
+                    android:onClick="browsi4"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

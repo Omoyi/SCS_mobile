@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Member2">
+    tools:context=".Member3">
     <RelativeLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
@@ -45,7 +45,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Uwimana Rachel"/>
+                    android:text="Uwimana Rachel"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -58,6 +59,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
                     android:onClick="brows1"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -80,7 +82,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Umuhire Claudine"/>
+                    android:text="Umuhire Claudine"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -93,6 +96,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
                     android:onClick="brows2"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -119,7 +123,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nyirate Emma" />
+                    android:text="Nyirate Emma"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -132,6 +137,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
                     android:onClick="brows3"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -152,7 +158,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Umutesi Grace"/>
+                    android:text="Umutesi Grace"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -164,7 +171,7 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-
+                    android:background="@drawable/coloring"
                     android:onClick="brows4"
                     tools:ignore="OnClick" />
             </LinearLayout>

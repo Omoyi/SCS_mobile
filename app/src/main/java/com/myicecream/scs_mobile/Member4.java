@@ -14,27 +14,26 @@ public class Member4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_member4);
-
+       setContentView(R.layout.activity_member4);
 
     }
-    public void brows1(View view){
-        Intent brows1Intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
-        startActivity(brows1Intent);
+    public void browsi1(View view){
+        Intent browsi1Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Mugengano18"));
+        startActivity(browsi1Intent);
     }
 
-    public void brows2(View view){
-        Intent brows2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/claudinos"));
-        startActivity(brows2Intent);
+    public void browsi2(View view){
+        Intent browsi2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/RuzindanaWendyOrnella"));
+        startActivity(browsi2Intent);
     }
 
-    public void brows3(View view){
-        Intent brows3Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Nyirate"));
-        startActivity(brows3Intent);
+    public void browsi3(View view){
+        Intent browsi3Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/niygomhonor"));
+        startActivity(browsi3Intent);
     }
 
-    public void brows4(View view){
-        Intent brows4Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/GraceUmutesi"));
-        startActivity(brows4Intent);
+    public void browsi4(View view){
+        Intent browsi4Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/esthcarelle"));
+        startActivity(browsi4Intent);
     }
 }

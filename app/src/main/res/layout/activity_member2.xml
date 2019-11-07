@@ -45,7 +45,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kimbagira Sylvie"/>
+                    android:text="Kimbagira Sylvie"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -58,6 +59,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
                     android:onClick="browse1"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -80,7 +82,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ahishakiye Odette"/>
+                    android:text="Ahishakiye Odette"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -93,6 +96,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
                     android:onClick="browse2"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -119,7 +123,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nininahazwe Nice Nicole" />
+                    android:text="Nininahazwe Nice Nicole"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -132,6 +137,7 @@
                     android:text="view more"
                     android:textColor="@android:color/white"
                     android:onClick="browse3"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -148,11 +154,12 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/Blanca"/>
+                    android:src="@drawable/blanca"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Uwase Blandine"/>
+                    android:text="Uwase Blandine"
+                    android:textColor="@android:color/black"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -164,8 +171,8 @@
                     android:gravity="center"
                     android:text="view more"
                     android:textColor="@android:color/white"
-
                     android:onClick="browse4"
+                    android:background="@drawable/coloring"
                     tools:ignore="OnClick" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
