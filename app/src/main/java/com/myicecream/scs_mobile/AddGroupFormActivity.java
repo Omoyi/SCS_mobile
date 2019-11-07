@@ -67,10 +67,10 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
             Intent add = new Intent(AddGroupFormActivity.this, RegisterMembersActivity.class);
             startActivity(add);
         }
-//        if (v == mButtonAdd) {
-//            Intent intent = new Intent(AddGroupFormActivity.this, MembersActivity.class);
-//            startActivity(intent);
-//        }
+        if (v == mButtonAdd) {
+            Intent intent = new Intent(AddGroupFormActivity.this, MembersActivity.class);
+            startActivity(intent);
+        }
         if (v == mButtonAdd){
             addMembers();
         }

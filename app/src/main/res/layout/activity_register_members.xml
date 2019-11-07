@@ -6,13 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".RegisterMembersActivity">
 
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30sp"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:background="@drawable/layout_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="410dp"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Member name "
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textColorHint="#606060"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/antic_slab" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/descr"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:drawableLeft="@drawable/ic_group_work_black_24dp"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:hint="Number of members"-->
+<!--                    android:inputType="text"-->
+<!--                    android:padding="20dp"-->
+<!--                    android:textColorHint="#606060"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:fontFamily="@font/antic_slab" />-->
+
+                <EditText
+                    android:id="@+id/descr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="add description"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textColorHint="#606060"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/antic_slab" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agree to Out Terms &amp; Conditions"
+                    android:id="@+id/checkbox"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp" />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_file_upload_black_24dp"
+                    android:id="@+id/upload"
+                    android:background="#ffff" />
 
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/register"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginBottom="9dp"-->
+<!--                    android:text="Register members"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    app:fontFamily="@font/farsan"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
+
+
+                <Button
+                    android:id="@+id/addMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/ripple"
+                    android:layout_marginBottom="30dp"
+                    android:text="Register"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

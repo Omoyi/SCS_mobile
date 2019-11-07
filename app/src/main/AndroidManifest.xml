@@ -11,12 +11,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".RegisterMembersActivity"></activity>
         <activity android:name=".AddGroupFormActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             />
-        <activity android:name=".Group4Activity" />
-        <activity android:name=".Group3" />
-        <activity android:name=".Group2" />
-        <activity android:name=".Group1Activity" />
+        <activity android:name=".Group4Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Group3"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Group2"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Group1Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity android:name=".MembersActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>

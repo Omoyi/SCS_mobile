@@ -4,7 +4,9 @@
         <item>@font/antic_slab</item>
         <item>@font/anton</item>
         <item>@font/cormorant_italic</item>
+        <item>@font/dancing_script_bold</item>
         <item>@font/farsan</item>
         <item>@font/henny_penny</item>
+        <item>@font/playfair_display_bold</item>
     </array>
 </resources>
