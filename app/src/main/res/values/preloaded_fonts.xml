@@ -7,9 +7,12 @@
         <item>@font/alef</item>
         <item>@font/alegreya_sans_sc_thin</item>
         <item>@font/alex_brush</item>
+        <item>@font/almendra</item>
+        <item>@font/averia_serif_libre_light</item>
         <item>@font/cabin_sketch</item>
         <item>@font/codystar_light</item>
         <item>@font/eater</item>
         <item>@font/yatra_one</item>
+        <item>@font/yeseva_one</item>
     </array>
 </resources>

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+  <corners android:radius="25dp"/>
   <gradient android:angle="45"
-      android:startColor="#FF8A80"
-      android:endColor="#F4FF81"/>
+      android:centerColor="#D5C15D"
+      android:gradientRadius="50dp"/>
+<!--  <corners android:bottomRightRadius="1000dp"-->
+<!--      android:bottomLeftRadius="1000dp"-->
+<!--      android:topRightRadius="10dp"-->
+<!--      android:topLeftRadius="10dp"/>-->
+<!--  <padding android:bottom="20dp"-->
+<!--           android:left="23dp"-->
+<!--           android:right="23dp"-->
+<!--           android:top="20dp" />-->
+
+
+<!--      -->
+<!--      android:right="5dp"-->
+<!--      android:top="15dp" />-->
+
 </shape>
