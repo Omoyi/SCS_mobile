@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blue"
     tools:context=".RegisterMembersActivity">
 
     <LinearLayout
@@ -19,8 +20,7 @@
             android:orientation="vertical"
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:background="@drawable/layout_background">
+            android:gravity="center">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,16 +40,17 @@
                     android:id="@+id/profile"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:layout_marginLeft="129dp"
                     android:background="@drawable/border" />
 
-                <Button
-                    android:id="@+id/up"
-                    android:layout_width="95dp"
-                    android:layout_height="24dp"
-                    android:layout_below="@id/profile"
-                    android:layout_marginTop="3dp"
-                    android:background="@drawable/back"
-                    android:text="Upload" />
+<!--                <Button-->
+<!--                    android:id="@+id/up"-->
+<!--                    android:layout_width="95dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_below="@id/profile"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:background="@drawable/reg"-->
+<!--                    android:text="Upload" />-->
 
                 <EditText
                     android:id="@+id/name"
@@ -84,13 +85,13 @@
                     android:textSize="14dp"
                     app:fontFamily="@font/antic_slab" />
 
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Agree to Out Terms &amp; Conditions"
-                    android:id="@+id/checkbox"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="50dp" />
+<!--                <CheckBox-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Agree to Out Terms &amp; Conditions"-->
+<!--                    android:id="@+id/checkbox"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginLeft="50dp" />-->
 
 
             </LinearLayout>
@@ -101,20 +102,13 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-<!--                <TextView-->
-<!--                    android:id="@+id/register"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:layout_marginBottom="9dp"-->
-<!--                    android:text="Register members"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    app:fontFamily="@font/farsan"-->
-<!--                    android:textSize="20dp"-->
-<!--                    android:textStyle="bold"-->
-<!--                    />-->
-
+                <ImageButton
+                    android:id="@+id/retour"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/reg"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
 
                 <Button
                     android:id="@+id/addMember"
@@ -123,8 +117,8 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
-                    android:background="@drawable/ripple"
                     android:layout_marginBottom="30dp"
+                    android:background="@drawable/reg"
                     android:text="Register"
                     android:textColor="@android:color/white" />
             </LinearLayout>

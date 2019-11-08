@@ -68,10 +68,19 @@ public class AddGroupFormActivity extends AppCompatActivity implements View.OnCl
             startActivity(add);
         }
         if (v == mButtonAdd) {
+
+            mGroupName.getText().toString().length();
+            mGroupName.setError("Group name is required");
+            mMembers.getText().toString().length();
+            mMembers.setError("number of members is required");
+            mDescription.getText().toString().length();
+            mDescription.setError("Description is required");
             Intent intent = new Intent(AddGroupFormActivity.this, MembersActivity.class);
             startActivity(intent);
         }
         if (v == mButtonAdd){
+
+
             addMembers();
         }
         if (v == mUp) {

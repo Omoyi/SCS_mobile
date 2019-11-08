@@ -33,6 +33,7 @@ public class RegisterMembersActivity extends AppCompatActivity implements View.O
    @BindView(R.id.choose) ImageButton mUpload;
     private ImageView profile;
     private Button imgUr;
+    @BindView(R.id.name) EditText mName;
     public static final String TAG = RegisterMembersActivity.class.getSimpleName();
 
     //    TextView mLoginTextView;
@@ -41,6 +42,7 @@ public class RegisterMembersActivity extends AppCompatActivity implements View.O
 //    @BindView(R.id.name) EditText mName;
 //    @BindView(R.id.descr) EditText mDescr;
     @BindView(R.id.addMember) Button mRegister;
+    @BindView(R.id.retour) ImageButton mReturn;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -59,14 +61,31 @@ public class RegisterMembersActivity extends AppCompatActivity implements View.O
         ButterKnife.bind(this);
 
         mRegister.setOnClickListener(this);
-
+        mUpload.setOnClickListener(this);
+        mReturn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         if (v == mRegister) {
+            mName.getText().toString().length();
+            mName.setError("Member name is required");
+
             Intent intent = new Intent(RegisterMembersActivity.this,MembersActivity.class);
             startActivity(intent);
         }
+        if (v == mUpload){
+            ImageChooser();
+        }
+        if (v == mReturn){
+            Intent retour = new Intent(RegisterMembersActivity.this,AddGroupFormActivity.class);
+        }
+    }
+
+    private void ImageChooser() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent,1);
     }
 }

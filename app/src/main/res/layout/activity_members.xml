@@ -52,13 +52,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
-                    android:src="@drawable/quote"
+                    android:src="@drawable/cats"
                     android:layout_width="64dp"
                     android:layout_height="64dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Group 1"/>
+                    android:text="Code Catalyst"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Your limitation—it's only your imagination."/>
+                    android:text="With us, impossible does not exist."/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -85,14 +85,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
-                    android:src="@drawable/ggg"
-                    android:background="#000000"
+                    android:src="@drawable/wizr"
                     android:layout_width="64dp"
                     android:layout_height="64dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Group 2"/>
+                    android:text="Wizards"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
@@ -102,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Push yourself, because no one else is going to do it for you."/>
+                    android:text="Trust us with your needs."/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -128,12 +127,12 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/logo" />
+                    android:src="@drawable/smac" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Group 3" />
+                    android:text="Smart Code" />
 
                 <View
                     android:layout_width="match_parent"
@@ -145,7 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="ghshvgyufwyh" />
+                    android:text="Trust us with your imaginations." />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -162,12 +161,11 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/white"
-                    android:background="#000000"/>
+                    android:src="@drawable/mas" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Group 4"
+                    android:text="Master Coders"
                    />
                 <View
                     android:layout_width="match_parent"
@@ -178,7 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="gagajaffa"/>
+                    android:text="We master everything we do."/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
