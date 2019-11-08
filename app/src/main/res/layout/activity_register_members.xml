@@ -27,6 +27,29 @@
                 android:layout_height="410dp"
                 android:orientation="vertical"
                 >
+                <ImageButton
+                    android:id="@+id/choose"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="#ffff"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginLeft="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload" />
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border" />
+
+                <Button
+                    android:id="@+id/up"
+                    android:layout_width="95dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/profile"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/back"
+                    android:text="Upload" />
 
                 <EditText
                     android:id="@+id/name"
@@ -34,6 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"
                     android:drawableLeft="@drawable/ic_person_black_24dp"
                     android:drawablePadding="10dp"
                     android:hint="Member name "
@@ -43,20 +67,6 @@
                     android:textSize="14sp"
                     app:fontFamily="@font/antic_slab" />
 
-<!--                <EditText-->
-<!--                    android:id="@+id/descr"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="20dp"-->
-<!--                    android:layout_marginEnd="20dp"-->
-<!--                    android:drawableLeft="@drawable/ic_group_work_black_24dp"-->
-<!--                    android:drawablePadding="10dp"-->
-<!--                    android:hint="Number of members"-->
-<!--                    android:inputType="text"-->
-<!--                    android:padding="20dp"-->
-<!--                    android:textColorHint="#606060"-->
-<!--                    android:textSize="14sp"-->
-<!--                    app:fontFamily="@font/antic_slab" />-->
 
                 <EditText
                     android:id="@+id/descr"
@@ -79,15 +89,8 @@
                     android:layout_height="wrap_content"
                     android:text="Agree to Out Terms &amp; Conditions"
                     android:id="@+id/checkbox"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="30dp" />
-
-                <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/ic_file_upload_black_24dp"
-                    android:id="@+id/upload"
-                    android:background="#ffff" />
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp" />
 
 
             </LinearLayout>
